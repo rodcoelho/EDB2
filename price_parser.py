@@ -1,6 +1,6 @@
 from __future__ import division
 from multipledispatch import dispatch
-from .compat import PY2
+from compat import PY2
 import numpy as np
 
 if PY2:

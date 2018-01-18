@@ -11,6 +11,15 @@ class AbstractRiskManager:
 class AbstractCompliance:
     __metaclass__ = ABCMeta
 
+class AbstractExecutionHandler:
+    __metaclass__ = ABCMeta
+
+class AbstractStatistics:
+    __metaclass__ = ABCMeta
+
+class AbstractStrategy:
+    __metaclass__ = ABCMeta
+
 
 class AbstractPriceHandler:
     """

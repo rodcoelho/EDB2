@@ -1,8 +1,8 @@
 from __future__ import print_function
 
-from enum import Enum
+from aenum import Enum
 
-EventType = Enum("EventType")
+EventType = Enum("EventType", "TICK BAR SIGNAL ORDER FILL SENTIMENT")
 
 class Event:
     def __init__(self):

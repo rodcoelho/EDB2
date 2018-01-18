@@ -1,7 +1,7 @@
 from __future__ import print_function
 from datetime import datetime
-from .compat import queue
-from .event import EventType
+from compat import queue
+from event import EventType
 
 from yahoo_daily_csv_bar import YahooDailyCsvBarPriceHandler
 from price_parser import PriceParser
@@ -9,10 +9,10 @@ from fixed import FixedPositionSizer
 from risk_manager import ExampleRiskManager
 from portfolio_handler import PortfolioHandler
 from compliance import ExampleCompliance
-from .execution_handler.ib_simulated import IBSimulatedExecutionHandler
-from .statistics.tearsheet import TearsheetStatistics
+from execution_handler import IBSimulatedExecutionHandler
+from tearsheet import TearsheetStatistics
 
-class TradingSession(object):
+class TradingSession:
     """
     Enscapsulates the settings and components for
     carrying out either a backtest or live trading session.

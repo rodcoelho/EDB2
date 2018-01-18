@@ -3,7 +3,7 @@ import os
 import pandas as pd
 
 from price_parser import PriceParser
-from .base import AbstractBarPriceHandler
+from base import AbstractBarPriceHandler
 from event import BarEvent
 
 
